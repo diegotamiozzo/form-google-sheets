@@ -2,6 +2,14 @@
 
 Projeto vanilla (HTML, CSS e JavaScript) para receber mensagens em uma planilha do Google Sheets por meio de um web app do Google Apps Script. Não há dependências, etapa de build ou servidor backend próprio.
 
+## Para clonar
+
+Clone o repositório e acesse a pasta do projeto:
+```bash
+git clone https://github.com/diegotamiozzo/form-google-sheets.git
+cd form-google-sheets
+```
+
 ## Como funciona
 
 1. `index.html` apresenta o formulário.
@@ -59,8 +67,16 @@ Publique `index.html`, `css/` e `js/` em qualquer hospedagem de site estático. 
 
 ## Para deploy (Netlify)
 
-```Build command
+Em Build command
+```text
 test -n "$API_URL" && echo "const API_URL = '$API_URL';" > js/config.js
+```
+
+## Para teste, acesse:
+
+Link da hospedagem:
+```text
+https://form-mensege.netlify.app/
 ```
 
 ## Dados gravados
