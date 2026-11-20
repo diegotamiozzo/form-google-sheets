@@ -57,6 +57,12 @@ const API_URL = 'URL_DO_SEU_WEB_APP';
 
 Publique `index.html`, `css/` e `js/` em qualquer hospedagem de site estático. Como `js/config.js` não é versionado, configure a URL do web app nesse arquivo também no ambiente de publicação. O formulário deve ser servido por HTTP ou HTTPS, não aberto diretamente como arquivo local.
 
+## Para deploy (Netlify)
+
+```Build command
+test -n "$API_URL" && echo "const API_URL = '$API_URL';" > js/config.js
+```
+
 ## Dados gravados
 
 A aba `Form` recebe as colunas `Data`, `Nome`, `Email` e `Mensagem`. O web app precisa ter acesso de edição à planilha e a implantação deve permitir que os usuários do formulário o acessem.
